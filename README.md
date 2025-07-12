@@ -50,12 +50,7 @@ Sertakan file `RestApiOpenAi.php` dan buat instance class dengan API Key Anda.
   // GANTI DENGAN API KEY ASLI ANDA
   $api_key = 'YOUR_OPENAI_API_KEY';
 
-  try {
-      $openai = new RestApiOpenAi($api_key);
-      // Lanjutkan dengan memanggil fungsi lain di sini...
-  } catch (Exception $e) {
-      die('Error: ' . $e->getMessage());
-  }
+  $openai = new RestApiOpenAi($api_key);
 ?>
 ```
 
